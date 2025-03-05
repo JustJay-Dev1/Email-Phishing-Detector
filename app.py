@@ -14,7 +14,7 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 model = joblib.load("ML models/phishing_detection_model.pkl")
 vectorizer = joblib.load("ML models/tfidf_vectorizer.pkl")
 
-VT_API_KEY = "f4329dea4818e550e707c86eae2818b683e95a3763701253cf14157c90d5d32f"
+VT_API_KEY = "your virustotal API key "
 
 def clean_text(text):
     text = text.lower()
